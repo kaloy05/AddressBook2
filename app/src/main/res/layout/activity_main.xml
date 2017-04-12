@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skooltchdev.addressbook.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+       <TextView
+           android:id="@+id/nameTextView"
+           android:textSize="18dp"
+            android:padding="4dp"
+           android:layout_margin="8dp"
+           android:text="Name:"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_toRightOf="@+id/nameTextView"
+            android:id="@+id/nameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/numberTextView"
+            android:textSize="18dp"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:text="Phone:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_toRightOf="@+id/numberTextView"
+            android:id="@+id/numberEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/address1TextView"
+        android:textSize="18dp"
+        android:padding="4dp"
+        android:layout_margin="8dp"
+        android:text="Address Line 1:"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:layout_toRightOf="@+id/address1TextView"
+        android:id="@+id/address1EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/address2TextView"
+            android:textSize="18dp"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:text="Address Line 2:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_toRightOf="@+id/address2TextView"
+            android:id="@+id/address2EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/cityTownTextView"
+            android:textSize="18dp"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:text="City/Town:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_toRightOf="@+id/cityTownTextView"
+            android:id="@+id/cityTownEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/postalZipTextView"
+            android:textSize="18dp"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:text="Postal / Zip::"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_toRightOf="@+id/postalZipTextView"
+            android:id="@+id/postalZipEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/stateProvinceTextView"
+            android:textSize="18dp"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:text="State / Province:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_toRightOf="@+id/stateProvinceTextView"
+            android:id="@+id/stateProvinceEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:background="#3F51B5"
+            android:textColor="#fff"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="Add to Contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:background="#3F51B5"
+            android:textColor="#fff"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="View Contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
